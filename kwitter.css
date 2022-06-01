@@ -1,0 +1,11 @@
+body{
+    background-color: #90C825;
+    color:#916310;
+}
+h1, #user_name, #login_button{
+    margin: 1%;
+}
+#user_name{
+    width: 200px;
+    background-color: #72b732;
+}
