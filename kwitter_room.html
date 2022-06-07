@@ -3,12 +3,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Kwitter 2.0</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="kwitter_room.css">
     </head>
-    <body>
+    <body class="container">
+      <center>
+        <button id="logOut" onclick="logOut()"> Log Out </button>
+        <img id="icon" src="Kwitter2.0icon.jpeg">
+        <h4 id="username_holder">(Username)</h4>
+        <label>#Add Room:</label>
+        <input id="room_name" type="text" placeholder="#Room Name">
+        <button onclick="addRoom()"> Add Room</button>
+		<h3 id="user_name" class="color_white"></h3>
+		<h3 class="color_white">#TRENDINGROOMS</h3>
+		<div class="form-group input_div_room_page" style="color:#ccebf5;">
+		</div>
+
+		</div>
+      </center>
         <script src="kwitter_room.js" ></script>
     </body>
 </html>
