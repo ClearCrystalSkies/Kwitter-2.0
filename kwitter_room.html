@@ -1,42 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Kwitter Room</title>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kwitter 2.0</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="kwitter_room.css">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-<body>
-<div class="container">
-<button id="logout" onclick="logOut()" class="glyphicon glyphicon-log-out btn btn-danger">Log out</button>
-	<center>
-		<h1 class="header">	
-			Kwitter	
-			<sup>
-				<img src="m2.png">
-			</sup>
-		</h1>
-		<h3 id="user_name" class="color_white">Welcome user!</h3>
-		<div class="form-group input_div_room_page">
-			<label>#Add Room:</label>
-			<input placeholder="#Room name" type="text" id="room_name">
-		</div>
-		<button class="btn btn-success" onclick="addRoom()">#Add Room</button>
-		<h3 class="color_white">#TRENDINGROOMS</h3>
-		<div id="output">
-		</div>
-	</center>
-</div>
-<script src="kwitter_room.js"></script>
-</body>
+    </head>
+    <body class="container">
+      <center>
+        <img id="icon" src="Kwitter2.icon.jpeg">
+        <br>
+        <button id="logOut" onclick="logOut()"> Log Out </button>
+        <h3 id="username_holder">(Username)</h3>
+        <label>#Add Room:</label>
+        <br>
+        <input id="room_name_input" type="text" placeholder="#Room Name">
+        <button onclick="addRoom()"> Add Room </button>
+        <h3 id="user_name" class="color_white"></h3>
+        <hr>
+        <h2 class="color_white">#TRENDINGROOMS</h2>
+        <div id="output"></div>
+      </center>
+        <script src="kwitter_room.js" ></script>
+    </body>
 </html>

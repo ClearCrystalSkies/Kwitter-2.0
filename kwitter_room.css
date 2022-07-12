@@ -11,11 +11,12 @@ h3, label, h2{
     color: #A51928;
 }
 button{
-    height: 20px;
+    height: auto;
     background-color:#A51928;
     border:#FFF5F5;
     border-radius: 25px;
     color: #FFF5F5;
+    padding: 1%;
 }
 #logOut{
     width: 7%;
