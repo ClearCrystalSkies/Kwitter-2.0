@@ -16,4 +16,9 @@ function send() {
     });
     document.getElementById("message_input").value ="";
 }
+function logOut(){
+    localStorage.removeItem("User Name");
+    localStorage.removeItem("Room Name");
+    window.location ="index.html";
+  }
 

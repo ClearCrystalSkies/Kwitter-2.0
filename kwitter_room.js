@@ -27,7 +27,7 @@ function getData(){
 getData();
 function redirectToRoomName(){
   localStorage.setItem("Current Room", Room_names);
-  window.location = "kwitter.html"
+  window.location = "kwitter_page.html"
 }
 function logOut(){
   localStorage.removeItem("User Name");
